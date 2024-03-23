@@ -27,8 +27,7 @@ team_data = get_team_data_by_game(0)
 for i in range(1, 30):
     new_data = get_team_data_by_game(i)
     team_data = pd.concat([team_data, new_data], ignore_index=True)
-team_data = team_data[model_features]
-
-save_path = "/Users/callihanbertley/Downloads/team_data.csv"
+team_data = team_data[['MATCHUP'] + model_features]
+save_path = "/Users/callihanbertley/Downloads/name_team_data.csv"
 team_data.to_csv(save_path)
 print(f"combined team data saved to {save_path}")
