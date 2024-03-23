@@ -7,6 +7,7 @@ import numpy as np
 from sklearn.metrics import classification_report, confusion_matrix
 import seaborn as sns
 import matplotlib.pyplot as plt
+from tensorflow import random
 random.set_seed(42)
 
 
