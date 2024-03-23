@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-import Home from './Home';       // Assuming the file is named Home.js and is in the same directory
-import Account from './Account'; // Assuming the file is named Account.js
-import Bets from './Bets';       // Assuming the file is named Bets.js
+import Home from './components/Home/Home';       // Assuming the file is named Home.js and is in the same directory
+import Account from './components/Accounts/Account'; // Assuming the file is named Account.js
+import Bets from './components/Bets/Bets';       // Assuming the file is named Bets.js
 
 const App = () => {
     return (
