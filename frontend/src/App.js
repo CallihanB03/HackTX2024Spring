@@ -1,30 +1,31 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import Home from './Home';       // Assuming the file is named Home.js and is in the same directory
+import Account from './Account'; // Assuming the file is named Account.js
+import Bets from './Bets';       // Assuming the file is named Bets.js
 
 const App = () => {
-  return (
-    <div className="app">
-      <header className="app-header">
-        <nav>
-          <button>Home</button>
-          <button>Live Bets</button>
-          <button>My Bets</button>
-          <button>Account</button>
-        </nav>
-      </header>
+    return (
+        <Router>
+            <div className="app">
+                <header className="app-header">
+                    <nav>
+                        <Link to="/">Home</Link>
+                        <Link to="/account">Account</Link>
+                        <Link to="/bets">Bets</Link>
+                    </nav>
+                </header>
 
-      <div className="main-content">
-        <aside className="sidebar">
-          <button>Sidebar Item 1</button>
-          <button>Sidebar Item 2</button>
-          <button>Sidebar Item 3</button>
-        </aside>
-        <section className="content">
-          <h1>Welcome to the Betting App</h1>
-          {/* Content goes here */}
-        </section>
-      </div>
-    </div>
-  );
+                <main className="main-content">
+                    <Routes>
+                        <Route path="/" element={<Home />} exact />
+                        <Route path="/account" element={<Account />} />
+                        <Route path="/bets" element={<Bets />} />
+                    </Routes>
+                </main>
+            </div>
+        </Router>
+    );
 };
 
 export default App;
