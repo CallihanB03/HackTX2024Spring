@@ -1,0 +1,16 @@
+/* Game.css */
+
+.game {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.game-time,
+.teams,
+.odds {
+  flex: 1;
+  text-align: center;
+}

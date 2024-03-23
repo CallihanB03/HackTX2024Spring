@@ -1,11 +1,12 @@
 import React from 'react';
+import '../../styles/Game.css';
 
-const Game = ({ gameTime, teamA, teamB, oddsOfTeamA }) => {
+const Game = ({ gameTime, teamA, teamB, odds }) => {
   return (
-    <div>
-      <p>Game Time: {gameTime}</p>
-      <p>Teams: {teamA} vs {teamB}</p>
-      <p>Odds of Team A Winning: {oddsOfTeamA}</p>
+    <div className="game">
+      <div className="game-time">Game Time: {gameTime}</div>
+      <div className="teams">Teams: {teamA} vs {teamB}</div>
+      <div className="odds">Odds of Team A Winning: {odds}</div>
     </div>
   );
 };
