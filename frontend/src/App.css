@@ -1,0 +1,29 @@
+.app-header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+.app-header nav button {
+  margin-right: 10px;
+}
+
+.main-content {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+.sidebar button {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}

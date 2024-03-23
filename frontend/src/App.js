@@ -1,14 +1,30 @@
-import './App.css';
+import React from 'react';
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <h1>App</h1>
-      <div>
-        Products
+    <div className="app">
+      <header className="app-header">
+        <nav>
+          <button>Home</button>
+          <button>Live Bets</button>
+          <button>My Bets</button>
+          <button>Account</button>
+        </nav>
+      </header>
+
+      <div className="main-content">
+        <aside className="sidebar">
+          <button>Sidebar Item 1</button>
+          <button>Sidebar Item 2</button>
+          <button>Sidebar Item 3</button>
+        </aside>
+        <section className="content">
+          <h1>Welcome to the Betting App</h1>
+          {/* Content goes here */}
+        </section>
       </div>
     </div>
   );
-}
+};
 
 export default App;
