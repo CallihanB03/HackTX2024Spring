@@ -1,12 +1,11 @@
 import React from 'react';
 
-const Game = () => {
-  // Your code here
-
+const Game = ({ gameTime, teamA, teamB, oddsOfTeamA }) => {
   return (
     <div>
-      {/* Your JSX code here */}
-      game time, team a vs team b, odds of team a winning
+      <p>Game Time: {gameTime}</p>
+      <p>Teams: {teamA} vs {teamB}</p>
+      <p>Odds of Team A Winning: {oddsOfTeamA}</p>
     </div>
   );
 };
