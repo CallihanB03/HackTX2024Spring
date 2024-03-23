@@ -12,6 +12,7 @@ function Bets() {
     try {
       const response = await fetch('http://127.0.0.1:5000/bets');
       const data = await response.json();
+      console.log('Fetched data:', data);
       setGames(data);
     } catch (error) {
       console.error('Error fetching games:', error);
@@ -20,7 +21,7 @@ function Bets() {
 
   // Temporary games array
   const tempGames = [
-    { id: 1, name: 'Game 1', gameTime: '12:00 PM', teamA: 'Dallas Mavs', teamB: 'GS Warriors', odds: -100 },
+    { id: 1, name: 'Game 1', gameTime: '12:00 PM', teamA: 'Dallas', teamB: 'GS Warriors', odds: -100 },
     { id: 2, name: 'Game 2', gameTime: '3:00 PM', teamA: 'Team C', teamB: 'Team D', odds: +200 },
     { id: 3, name: 'Game 3', gameTime: '6:00 PM', teamA: 'Team E', teamB: 'Team F', odds: +300 }
   ];
