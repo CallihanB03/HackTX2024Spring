@@ -1,7 +1,19 @@
 import React from 'react';
+import BetsList from './BetsList';
 
-const Bets = () => {
-  return <div>Bets Page Content</div>;
-};
+function Bets() {
+  return (
+    <div>
+      <h1>Current Bets</h1>
+      <div>
+        <BetsList />
+        <p>
+          Text under the list of bets
+        </p>
+      </div>
+      
+    </div>
+  );
+}
 
 export default Bets;
